@@ -6,9 +6,10 @@ USER root
 
 # Add dependency
 # RUN apt-get update
-# RUN apt-get install -y graphviz
+# RUN apt-get purge python-requests
+# RUN apt-get install python-requests python-pip
 
-USER main
+# USER main
 
 # Install requirements for Python 2
 ADD requirements.txt requirements.txt
